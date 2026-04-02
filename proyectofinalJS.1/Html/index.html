@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/index.css" rel="stylesheet">
+    <link href="../css/social.css" rel="stylesheet">
+    <title>Inicio</title>
+</head>
+<body>
+  <!--Navegador-->    
+  <nav class="navbar">
+    <div class="container-logo">
+        <img class="logo" src="../images/logo.webp">
+    </div>
+    
+    <div class="opcionesnav">
+        <div class="indicador"></div> 
+
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="contactanos.html">Contactanos</a>
+        <a href="login.html">Login</a>
+        <a href="registro.html" class="registro">Registro</a>
+
+    </div>
+  </nav>
+
+  <div class="hero-section">
+    <div class="hero-text">
+       <h1>Bienvenido a <span class="highlight">Nuestra Empresa</span></h1>
+       <p>Descubre todo lo que tenemos para ofrecerte con los mejores planes y nuestro equipo de expertos en desarrollo.</p>
+    </div>
+    <div class="hero-img">
+       <img src="../images/Reunion.png" alt="Reunión de equipo">
+    </div>
+  </div>
+
+  <section class="seccion-inicio">
+    <h1>¿Que es la comunicación?</h1>
+
+    <div class="sub_nav">
+      <button class="btn-equipo active" data-id="kevin">Kevin</button>
+      <button class="btn-equipo" data-id="Jose">Jose</button>
+      <button class="btn-equipo" data-id="Yilma">Yilma</button>
+  </div>
+
+    <div class="conteiner">
+      <div class="card">
+        <ul class="list">
+          <li class="item active" id="kevin">
+            <div class="contenido-integrante">
+              <img src="../images/kevin.png" alt="Kevin">
+              <div class="texto">
+                <h2>Kevin D. Patiño </h2>
+                <p>Para mí la comunicación es la forma de como expresamos un mensaje a otra persona. Dentro de la comunicación participan
+                   demasiados factores que hacen que se bastante complejo empezando por el tipo de comunicación si es pasiva, agresiva o 
+                   asertiva entre otras, esto hace que cada persona sea un mundo diferente a la hora de comunicarse y si a eso le sumamos 
+                   que los gestos corporales que si el timbre de la voz, el volumen, la intención, etc. Vemos que cada ves es mas profundo y 
+                   tiene más matices en conclusión la comunicación es un conjunto de elementos que utilizo para transmitir un mensaje a otra 
+                   persona y que si se utilizar a mi favor la comunicación se puede transformar en una gran aliada tanto en mi vida personal 
+                   como laboral por que la base de nuestra sociedad es la comunicación. </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="item" id="Jose">
+            <div class="contenido-integrante">
+              <img src="../images/Jose..jpeg" alt="Jose">
+              <div class="texto">
+                <h2> Jose David Restrepo</h2>
+                  <p>la comunicacion es el arte que tenemos para expresar las necesidades y emociones que sentimos como seres humanos, es importante
+                   ya que sin ella no tendriamos metodos de hacer que el otro entienda que necesitamos o que sentimos, es importante para construir
+                   relaciones personales y llegar a ser una sociedad
+                  </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="item" id="Yilma">
+            <div class="contenido-integrante">
+              <img src="../images/Yilma.-removebg-preview.png" alt="Yilma">
+              <div class="texto">
+                <h2>Yilma Emis Lopez </h2>
+                <p>La comunicación es ese puente invisible que lanzamos hacia los demás para dejar de ser islas y empezar a compartir mundos.
+                   No es solo escupir palabras o mandar textos, sino ese clic real donde lo que yo siento aterriza de verdad en tu cabeza, 
+                   mezclando intención, señas y hasta silencios para que, al final del día, logremos entendernos
+                  </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="texto-T">
+    <h2 class=> LA COMUNICACION </h2>
+  </div>
+
+  <section id="bloque2" class="seccion-bloque2">
+
+    <div class="contenedor-columnas">
+        
+        <div class="columna-animada card-horizontal">
+            <h3 class="titulo-link" onclick="toggleTarjeta(this)">
+                Tipos <span class="indicador-abrir">(Toca para abrir)</span>
+            </h3>
+            <div class="contenido-flex oculto-inicial">
+                <ul class="lista-lateral">
+                    <li onclick="seleccionarItem(this, 'agresivo', 'tipos')">Agresivo</li>
+                    <li onclick="seleccionarItem(this, 'pasivo', 'tipos')">Pasivo</li>
+                    <li onclick="seleccionarItem(this, 'asertivo', 'tipos')">Asertivo</li>
+                </ul>
+                <div id="detalle-tipos" class="cuadro-informativo oculto-inicial"></div>
+            </div>
+        </div>
+
+        <div class="columna-animada card-horizontal">
+            <h3 class="titulo-link" onclick="toggleTarjeta(this)">
+                Formas <span class="indicador-abrir">(Toca para abrir)</span>
+            </h3>
+            <div class="contenido-flex oculto-inicial">
+                <ul class="lista-lateral">
+                    <li onclick="seleccionarItem(this, 'verbal', 'formas')">Verbal</li>
+                    <li onclick="seleccionarItem(this, 'no-verbal', 'formas')">No Verbal</li>
+                    <li onclick="seleccionarItem(this, 'corporal', 'formas')">Corporal</li>
+                </ul>
+                <div id="detalle-formas" class="cuadro-informativo oculto-inicial"></div>
+            </div>
+        </div>
+
+        <div class="columna-animada card-horizontal">
+            <h3 class="titulo-link" onclick="toggleTarjeta(this)">
+                Estilos <span class="indicador-abrir">(Toca para abrir)</span>
+            </h3>
+            <div class="contenido-flex oculto-inicial">
+                <ul class="lista-lateral">
+                    <li onclick="seleccionarItem(this, 'formal', 'estilos')">Formal</li>
+                    <li onclick="seleccionarItem(this, 'informal', 'estilos')">Informal</li>
+                </ul>
+                <div id="detalle-estilos" class="cuadro-informativo oculto-inicial"></div>
+            </div>
+        </div>
+
+    </div>
+  </section>
+  
+ <section class="seccion-pilares">
+    <div class="pilares-contenedor">
+        
+        <div class="pilares-cabecera">
+            <h2>Pilares de la <br><span>Comunicación</span></h2>
+            <p>Estos elementos son la base para transmitir ideas con claridad y empatía en cualquier entorno.</p>
+        </div>
+
+        <div class="pilares-grid">
+            
+            <div class="pilar-card">
+                <div class="pilar-icono">
+                    <span class="material-symbols-rounded"> <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e3e3e3"><path d="M602.83-377.17q50.5-50.5 50.5-122.83t-50.5-122.83q-50.5-50.5-122.83-50.5t-122.83 50.5q-50.5 50.5-50.5 122.83t50.5 122.83q50.5 50.5 122.83 50.5t122.83-50.5ZM401.5-421.5q-32.17-32.17-32.17-78.5t32.17-78.5q32.17-32.17 78.5-32.17t78.5 32.17q32.17 32.17 32.17 78.5t-32.17 78.5q-32.17 32.17-78.5 32.17t-78.5-32.17Zm-186.17 139Q96.67-365 40-500q56.67-135 175.33-217.5Q334-800 480-800t264.67 82.5Q863.33-635 920-500q-56.67 135-175.33 217.5Q626-200 480-200t-264.67-82.5ZM480-500Zm217.5 169.83q99.17-63.5 151.17-169.83-52-106.33-151.17-169.83-99.17-63.5-217.5-63.5t-217.5 63.5Q163.33-606.33 110.67-500q52.66 106.33 151.83 169.83 99.17 63.5 217.5 63.5t217.5-63.5Z"/></svg></svg></span>
+                   </div>
+                <h3>Observar</h3>
+                <p>Capacidad de notar el lenguaje no verbal y el contexto antes de intervenir.</p>
+            </div>
+
+            <div class="pilar-card">
+                <div class="pilar-icono">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e3e3e3"><path d="M234.67-80.67q58.66 0 99.83-31t61.5-85q19-50.66 37.17-76.33 18.16-25.67 72.83-69 64.67-52 96-113t31.33-147.67q0-119.66-77.5-197.5Q478.33-878 358.67-878q-118.34 0-196.84 75.83-78.5 75.84-81.83 191.5h66.67q3.33-87 62.83-143.83 59.5-56.83 149.17-56.83 88.33 0 148.16 60.16 59.84 60.17 59.84 148.5Q566.67-532 539-481t-87.67 96.33q-43.33 32-68.66 66.67-25.34 34.67-44 82-16 42.67-40.84 65.67-24.83 23-63.16 23-34.34 0-59.17-23.84-24.83-23.83-28.17-58.16H80.67q3.33 62 47.66 105.33 44.34 43.33 106.34 43.33Zm191.66-454.5Q454-563 454-602.67q0-40-27.67-68.33-27.66-28.33-67.66-28.33T290.33-671Q262-642.67 262-602.67q0 39.67 28.33 67.5 28.34 27.84 68.34 27.84t67.66-27.84Zm318.34 150.84-51-50.34q19.66-38.33 29.66-80.83t10-88.5q0-46-10-88.33-10-42.34-29-80.67l50.34-50.33q27 49 41.16 103.83Q800-664.67 800-604.67q0 60.34-14.17 115.5-14.16 55.17-41.16 104.84Zm117 114.66-49.67-48q38.33-62 59.83-134T893.33-602q0-79.33-21.66-151.83Q850-826.33 811-888.33l50-49.34q47.67 72 73.33 156.84Q960-696 960-602.67q0 92.67-25.67 176.84-25.66 84.16-72.66 156.16Z"/></svg>
+                </div>
+                <h3>Escuchar</h3>
+                <p>Oír activamente para comprender el mensaje profundo, no solo las palabras.</p>
+            </div>
+
+            <div class="pilar-card">
+                <div class="pilar-icono">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e3e3e3"><path d="M305.67-160q-9 0-16.84-4.5Q281-169 276.67-177l-82-146.33h66.66l41.34 80h90.66v-33.34h-70.66l-41.34-80H176.67l-61-106.66q-2-4.34-3.17-8.34t-1.17-8.33q0-2.67 4.34-16.67l61-106.66h104.66l41.34-80h70.66v-33.34h-90.66l-41.34 80h-66.66l82-146.33q4.33-8 12.16-12.5 7.84-4.5 16.84-4.5h111q14.33 0 23.83 9.5 9.5 9.5 9.5 23.83v170h-76.67L340-563.33h110v126.66h-94.67l-39.33-80h-96l-33.33 33.34h108l40 80H450v210q0 14.33-9.5 23.83-9.5 9.5-23.83 9.5h-111Zm209.16-21.5q-21.5-21.5-21.5-51.83 0-21.67 11-38.84 11-17.16 29-26.16v-363.34q-18-9-29-26.16-11-17.17-11-38.84 0-30.33 21.5-51.83t51.84-21.5q30.33 0 51.83 21.5t21.5 51.83q0 21.67-11 38.84-11 17.16-29 26.16V-552l93.33-56q-2-32 19.84-55.33 21.83-23.34 53.5-23.34 30.33 0 51.83 21.5t21.5 51.84q0 30.33-21.5 51.83T766.67-540q-11 0-20.84-2.83-9.83-2.84-18.16-7.84L625.33-489l111 88.67q7-3 14.67-4.67t15.67-1.67q30.33 0 51.83 21.5t21.5 51.84q0 30.33-21.5 51.83T766.67-260q-35.67 0-57.17-27.33Q688-314.67 695-348l-95-76.33v127q17.33 9 28.17 25.83Q639-254.67 639-233.33q0 30.33-21 51.83T566.67-160q-30.34 0-51.84-21.5Z"/></svg>
+                </div>
+                <h3>Analizar</h3>
+                <p>Procesar la información recibida de forma objetiva y constructiva.</p>
+            </div>
+
+            <div class="pilar-card">
+                <div class="pilar-icono">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e3e3e3"><path d="M380.67-484.67q-17 0-28.5-11.5t-11.5-28.5q0-17 11.5-28.5t28.5-11.5q17 0 28.5 11.5t11.5 28.5q0 17-11.5 28.5t-28.5 11.5Zm199.33 0q-17 0-28.5-11.5t-11.5-28.5q0-17 11.5-28.5t28.5-11.5q17 0 28.5 11.5t11.5 28.5q0 17-11.5 28.5t-28.5 11.5Zm-180.67-315q-55.33 20.34-96 61.5Q262.67-697 242.67-642q55.66-18.67 95.66-60.83 40-42.17 61-96.84Zm76.34-13.66q-7.34 0-14.67 1t-14.67 3q41 57.66 101.17 93.83t130.17 34.83q5.33 0 11-.33 5.66-.33 11-1.67-34.34-61-94.17-96.5t-129.83-34.16ZM369.67-337l-49.34 49.33q-71-41.33-114.66-113.5Q162-473.33 162-562q0-132.67 92.67-225.33Q347.33-880 480-880q132.67 0 225.33 92.67Q798-694.67 798-562q0 88.67-43.67 160.83-43.66 72.17-114.66 113.5L590.33-337q63.34-30.67 102.17-90.5T731.33-562q0-14.33-2-28t-4.66-28q-7.34 1.33-15 1.67-7.67.33-15 1-74.67 4.66-142.34-22.84-67.66-27.5-118.33-83.16-32 58.66-86.5 98.33t-118.83 56v2q-1.34 75.67 38 136.5 39.33 60.83 103 91.5Zm77 290.33V-223L376-153.33 329.33-200 480-350.67 630.67-200 584-153.33 513.33-223v176.33h-66.66Zm-47.34-753Zm47-9.66Z"/></svg>
+                </div>
+                <h3>Percibir</h3>
+                <p>Captar las emociones y la energía detrás de cada interacción humana.</p>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+ <section class="seccion-info-doble">
+    
+<!-- 
+    <div class="bloque-fila animar-bloque">
+        <div class="columna-imagen">
+            <div class="img-placeholder">
+               <img src=" data:image/jpeg;base64,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" alt="">
+            </div>
+            </div>
+            
+        <div class="columna-texto">
+            <h2>Estructura del <span class="resalte">Proceso</span></h2>
+            <p class="subtitulo">El Modelo Funcional de Roman Jakobson</p>
+            <p class="descripcion">Cada acto de comunicación involucra seis elementos fundamentales, asociados a una función específica del lenguaje que determina la intención del mensaje.</p>
+
+            <ul class="lista-detalles">
+                <li>
+                    <div class="icono-cuadro">
+                        <span class="material-symbols-rounded">sync_alt</span>
+                    </div>
+                    <div class="texto-detalle">
+                        <h3>Elementos Fundamentales</h3>
+                        <p>Emisor, receptor, mensaje, canal, código y contexto interactuando.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="icono-cuadro">
+                        <span class="material-symbols-rounded">psychology</span>
+                    </div>
+                    <div class="texto-detalle">
+                        <h3>Funciones Metalingüística y Fática</h3>
+                        <p>Uso del código para hablar del lenguaje y verificación del canal.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div> -->
+
+    <div class="bloque-fila inverso animar-bloque">
+        <div class="columna-texto">
+            <h2>Más allá de las <span class="resalte">Palabras</span></h2>
+            <p class="subtitulo">Comunicación no verbal y Estilos</p>
+            <p class="descripcion">Entender la comunicación requiere descifrar claves no verbales: desde las microexpresiones hasta la intención detrás de cada estilo de interacción.</p>
+
+            <ul class="lista-detalles">
+                <li>
+                    <div class="icono-cuadro">
+                        <span class="material-symbols-rounded"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#FFFFFF"><path d="M318.5-320.65q-15.17-15.32-15.17-37.5t15.32-37.35q15.32-15.17 37.5-15.17t37.35 15.32q15.17 15.32 15.17 37.5t-15.32 37.35q-15.32 15.17-37.5 15.17t-37.35-15.32Zm248.67 0Q552-335.97 552-358.15t15.32-37.35q15.31-15.17 37.5-15.17 22.18 0 37.35 15.32 15.16 15.32 15.16 37.5t-15.31 37.35q-15.32 15.17-37.5 15.17-22.19 0-37.35-15.32ZM480-66.67q139.58 0 236.46-96.96 96.87-96.97 96.87-236.68 0-25.02-3.66-49.19-3.67-24.17-10.34-45.17-20.33 5-42.84 7.17-22.51 2.17-47.16 2.17-95.07 0-179.7-39.67t-144.3-112.33q-33.33 80-95.5 139.5-62.16 59.5-143.16 91.26v6.57q0 139.58 96.87 236.46Q340.42-66.67 480-66.67ZM400.67-723Q473.33-631 547-591.5 620.67-552 709.33-552q20.67 0 34.34-1.17 13.66-1.16 29.66-5.16-44-77.34-119.66-126.17Q578-733.33 480-733.33q-22.67 0-43 3.16-20.33 3.17-36.33 7.17ZM158.33-485.67q49-21.66 102.67-79.33t77.33-136.67Q263.33-666 221-610.33q-42.33 55.66-62.67 124.66ZM400.67-723Zm-62.34 21.33ZM120.33-575q29.34-60.33 76.84-107.83T305-759.67q-18.33-24.33-45.66-39-27.32-14.66-60.34-14.66-55.6 0-93.97 38.36Q66.67-736.6 66.67-681q0 33.02 14.66 60.34 14.67 27.33 39 45.66ZM324-31.5Q251-63 197-117t-85.5-127Q80-317 80-400q0-29 4-57.5T96-512q-43-26-69.5-70.5T0-681q0-83 58-141t141-58q53 0 97.5 25.5T368-784q26-8 54.5-12t57.5-4q83 0 156 31.5T763-683q54 54 85.5 127T880-400q0 83-31.5 156T763-117q-54 54-127 85.5T480 0q-83 0-156-31.5ZM197-683Z"/></svg></span>
+                    </div>
+                    <div class="texto-detalle">
+                        <h3>Paul Ekman y Microexpresiones</h3>
+                        <p>Las 7 emociones universales: miedo, tristeza, felicidad, ira, sorpresa, asco y desprecio.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="icono-cuadro">
+                        <span class="material-symbols-rounded"> <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#FFFFFF"><path d="M186-80q-54 0-80-22t-26-66q0-58 49-74t116-16h21v-56q0-31.33-1.33-53.17-1.34-21.83-6.34-35.83t-11.5-20.5q-6.5-6.5-16.83-6.5-9 0-16.5 3t-12.5 8q-4 5-5 10.5t1 11.5q6 11 14 21.5t8 24.5q0 25-17.5 42.5T159-291q-25 0-42.5-17.5T99-351q0-27 12-44t32.5-27q20.5-10 47.5-14t58-4q85 0 118 30.5T400-302v147q0 19 4.5 28t15.5 9q12 0 19.5-18t9.5-56h11q-3 62-23.5 87T368-80q-43 0-67.5-13.5T269-134q-10 29-29.5 41.5T186-80Zm373 0q-20 0-32.5-16.5T522-132l102-269q7-17 22-28t34-11q19 0 34 11t22 28l102 269q8 19-4.5 35.5T801-80q-12 0-22-7t-15-19l-20-58H616l-20 58q-4 11-14 18.5T559-80Zm-324-29q13 0 22-20.5t9-49.5v-67q-26 0-38 15.5T216-180v11q0 36 4 48t15 12Zm407-125h77l-39-114-38 114Zm-37-285q-48 0-76.5-33.5T500-643q0-104 65.67-170.17 65.66-66.16 169.33-66.16 43.33 0 68.67 9.16Q829-861 829-846q0 6-2 12t-7 11q-5 7-12.5 10t-15.5 1q-14-4-32-7t-33-3q-71 0-114 48t-43 127q0 22 8 46t36 24q11 0 21.5-5t18.5-14q17-18 31.5-60T712-758q2-13 10.5-18.5T746-782q18 0 27.5 9.5T779-749q-12 43-17.5 75t-5.5 58q0 20 5.5 29t16.5 9q11 0 21.5-8t29.5-30q2-3 15-7 8 0 12 6t4 17q0 28-32 54t-67 26q-26 0-44.5-14T691-574q-15 26-37 40.5T605-519Zm-485-1v-220q0-58 41-99t99-41q58 0 99 41t41 99v220h-80v-80H200v80h-80Zm80-160h120v-60q0-25-17.5-42.5T260-800q-25 0-42.5 17.5T200-740v60Z"/></svg></span>
+                    </div>
+                    <div class="texto-detalle">
+                        <h3>Kinesis y Paralenguaje</h3>
+                        <p>El lenguaje corporal y las cualidades de la voz que refuerzan el mensaje.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="columna-imagen">
+            <div class="img-placeholder">
+               <img src="../images/3656634.jpg" alt="">
+            </div>
+            </div>
+    </div>
+ </section>
+
+ <section class="seccion-maestra-comunicacion">
+    <div class="contenedor-maestro">
+        
+        <div class="columna-asertiva animar-card">
+            <div class="encabezado-columna">
+                <span class="material-symbols-rounded icono-principal"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#8C1AF6"><path d="M386.67-120q-51 0-87-37.17-36-37.16-41-85.83-59.34-6-99-50.67Q120-338.33 120-401.33q0-21.67 5.5-42.17t16.5-39.17q-11-18-16.5-38t-5.5-42.66q0-60.34 41-103.84T259.67-718Q262-769 299-804.5t88.33-35.5q28 0 50.5 10.33 22.5 10.34 42.17 29.34 19.33-19 41.67-29.34Q544-840 572-840q50.67 0 87.17 35.33 36.5 35.34 39.5 86.34 58.33 6 99.83 50t41.5 105q0 22.66-5.83 43Q828.33-500 817.33-482q11 19.33 16.84 40.83 5.83 21.5 5.83 42.5 0 63.34-39.83 106.5Q760.33-249 701-243q-5 48.67-41.17 85.83Q623.67-120 573.33-120q-28.33 0-50.83-9.83-22.5-9.84-42.5-28.84-20.33 19-42.67 28.84Q415-120 386.67-120Zm126.66-596.67v473.34q0 23.66 17.84 40.16 17.83 16.5 42.83 16.5 24 0 41.5-20.66Q633-228 634.67-250.67q-22.34-8-41.5-21.5Q574-285.67 560-305.33q-8.67-12-6.5-25T567.67-352q12-8.67 25-6.5t21.66 14.17Q626.67-327 645-317.83q18.33 9.16 40.33 9.16 36.34 0 62.17-25.16 25.83-25.17 25.83-64.84 0-7.66-1.5-15.66t-3.5-16.34q-17.66 12-38.5 18-20.83 6-43.16 6-14.34 0-23.84-9.5t-9.5-23.83q0-14.33 9.5-23.83 9.5-9.5 23.84-9.5 36.33 0 61.5-26.5 25.16-26.5 25.16-63.5 0-36.34-26.5-62-26.5-25.67-61.5-27.34-10.33 22-28.5 38.84-18.16 16.83-41.16 25.5Q602.33-583 590-589q-12.33-6-16.67-19.33-4.33-13.34 1.17-26 5.5-12.67 18.83-17 17-5.67 27.84-22Q632-689.67 632-710.67q0-26.33-17.5-44.5-17.5-18.16-41.83-18.16-24.34 0-41.84 16.5-17.5 16.5-17.5 40.16Zm-66.66 473.34v-473.34q0-23.66-17.17-40.16-17.17-16.5-42.17-16.5-24.33 0-42.16 18.16-17.84 18.17-17.84 44.5 0 20.67 10.34 36.84Q348-657.67 365-652q13.33 4.33 19.33 17 6 12.67 1.67 25.33-5.33 13.34-18 19.67-12.67 6.33-26 1-23-8-40.83-24.83-17.84-16.84-28.17-38.84-34 2.34-60.17 27.84-26.16 25.5-26.16 61.5 0 37 25.16 63.5 25.17 26.5 61.5 26.5 14.34 0 23.84 9.5t9.5 23.83q0 14.33-9.5 23.83-9.5 9.5-23.84 9.5-22.33 0-43.16-6.33-20.84-6.33-38.5-17.67-2.67 7-3.84 14.67-1.16 7.67-1.16 15.33 0 39.67 25.5 65.84 25.5 26.16 61.83 26.16 21.33 0 40-9.5t31-26.16q8.67-11.34 22-13.84t24.67 6.17q11.33 8.67 13.83 22t-6.17 24.67q-14 19.66-33 33.33-19 13.67-41.33 21.67 1.67 22.66 19.33 43.16 17.67 20.5 42.34 20.5 25 0 42.5-16.5t17.5-40.16ZM480-480Z"/></svg></span>
+                <h2>Comunicación <span>Asertiva</span></h2>
+            </div>
+            
+            <p class="intro-texto">La base de la Inteligencia Emocional aplicada al respeto y la empatía.</p>
+
+            <div class="tarjeta-interna">
+                <h3>Intención Triple</h3>
+                <div class="tags-asertivos">
+                    <span>Directa</span>
+                    <span>Clara</span>
+                    <span>Empática</span>
+                </div>
+            </div>
+
+            <div class="pilares-respeto">
+                <div class="pilar-item">
+                    <span class="material-symbols-rounded"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#8C1AF6"><path d="M563.33-80 400.67-242.67l46.66-46.66 116 116 235.34-235.34L845.33-362l-282 282ZM120-314.67l198-524.66h75.33l198 524.66H516l-51.33-138.66H243.33L192-314.67h-72Zm145.33-202.66h178l-86.66-241.34H352l-86.67 241.34Z"/></svg></span>
+                    <div>
+                        <h4>Palabra Correcta</h4>
+                        <p>Selección precisa del vocabulario verbal.</p>
+                    </div>
+                </div>
+                <div class="pilar-item">
+                    <span class="material-symbols-rounded"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#8C1AF6"><path d="M80-79.33V-146q48.67 0 96-8t93-24.67q-48-23.66-78.5-66.16t-30.5-95.5V-430h160v-126.67h139L319.33-829.33l60.67-30 139 272.66q17.33 33.34-1.96 65Q497.75-490 460-490h-73.33v53.33q0 30.25-21.55 51.79-21.54 21.55-51.79 21.55h-86.66v23q0 37 22.83 65.5t58.5 38.16l12 3q35.2 8.82 39.6 44.08 4.4 35.26-27.6 53.26Q274-104 210.13-91.67 146.27-79.33 80-79.33Zm566.67-114-47-46.67q22.33-22.33 34.66-50.91 12.34-28.58 12.34-61.83 0-33.26-12.34-61.76Q622-443 599.67-465.33l47-47q30.66 30.66 48.66 71.99 18 41.32 18 87.99 0 46.67-18 87.51t-48.66 71.51Zm113.66 114L712.67-127q43.66-43.67 68.83-101.44 25.17-57.77 25.17-124.23 0-66.66-25.17-124.33t-68.83-101.33L760.33-626q52.67 52.67 82.84 122.61 30.16 69.94 30.16 150.72 0 80.34-30.16 150.5Q813-132 760.33-79.33Z"/></svg></span>
+                    <div>
+                        <h4>Entonación Precisa</h4>
+                        <p>El poder del paralenguaje (tono y ritmo).</p>
+                    </div>
+                </div>
+                <div class="pilar-item">
+                    <span class="material-symbols-rounded"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#8C1AF6"><path d="M327.33-465.33h70v-93.34h-70v93.34ZM103-260l-11.67-37.67H131q5.67 0 10.17-4.16 4.5-4.17 4.5-10.5v-114.34L95-408.33l-8.33-36 59-19.67v-93.33h-48V-594h48v-88.67H183V-594h39v36.67h-39.33v81.66l46-16.33 2 34.67-48 18v139.66q0 16-10.17 27.84Q162.33-260 146.67-260H103Zm126.33 7.33-23.66-28.66q36.33-24.34 57.16-63Q283.67-383 287.33-428h-60v-37.67H290v-93h-47.33V-595h239.66v37.33H434V-464h62.67l-.67 36h-62v168.33h-37.33V-428h-72q-4 53.33-27.84 99.83-23.83 46.5-67.5 75.5ZM421.67-587l-32.34-11.33q11-19.34 21.67-38.67 10.67-19.33 18.67-39.67l35 12.67q-9.34 20.33-20.17 39.17Q433.67-606 421.67-587Zm-113-6q-10.67-19-22.34-36.33-11.66-17.34-24.33-34l33.33-15q12.67 17.33 23.34 34 10.66 16.66 21.33 35.66L308.67-593Zm394.66 268.33q30.67 0 60.17-14.33t54.17-41v-116q-27 3.67-48.17 8t-40.17 10q-48.33 15.33-72.5 38-24.16 22.67-24.16 53.33 0 28 19.33 45t51.33 17Zm-17 56.67q-55 0-87.66-31.5Q566-331 566-384.33q0-50.67 33.67-84 33.66-33.34 105.33-53.34 22.33-6 50.5-11.33t62.17-10Q817-596 798-620.83q-19-24.84-65-24.84-26 0-52.5 9.5t-65.17 32.84L588-650.67q34.33-24.33 75.83-38.5 41.5-14.16 83.5-14.16 69.67 0 103.34 43 33.66 43 33.66 123V-277h-55.66l-6-47.67q-29.34 27-64.84 41.84-35.5 14.83-71.5 14.83Z"/></svg></span>
+                    <div>
+                        <h4>Coherencia Total</h4>
+                        <p>Alineación entre lo que se dice y lo que se hace.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="columna-jakobson animar-card">
+            <div class="encabezado-columna">
+                <span class="material-symbols-rounded icono-principal"> <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#8C1AF6"><path d="M480.04-59.33q-48.04 0-81.71-33.64-33.66-33.64-33.66-81.7 0-39 23.16-69.33 23.17-30.33 58.84-41v-84.33q-13-4-24.67-10.17-11.67-6.17-21.67-16.17L328.67-354q1.66 6.33 2.16 12.91.5 6.58.5 13.76 0 48.05-33.62 81.69Q264.08-212 216.04-212t-81.71-33.63q-33.66-33.62-33.66-81.66T134.31-409q33.63-33.67 81.69-33.67 23 0 43.67 8.17 20.66 8.17 36 22.83L367-453q-1.67-6.33-2.5-13-.83-6.67-.83-13.95 0-7.29.83-13.97.83-6.68 2.5-12.75L294.33-549q-15.33 14.67-36 22.83-20.66 8.17-43.66 8.17-48.06 0-81.7-33.63t-33.64-81.66q0-48.04 33.63-81.71 33.63-33.67 81.67-33.67t81.7 33.64Q330-681.39 330-633.33q0 7.33-.5 14-.5 6.66-2.17 13l73 42.66q10-10 21.67-16.33 11.67-6.33 24.67-10.33v-84.34q-35.67-10.66-58.84-41.16-23.16-30.5-23.16-69.5 0-48.06 33.62-81.7 33.63-33.64 81.67-33.64t81.71 33.64q33.66 33.64 33.66 81.7 0 39-23.16 69.5-23.17 30.5-58.84 41.16v85q13 4 24.38 10.47 11.38 6.46 20.96 15.87l72.66-42q-1.66-7-2.5-13.8-.83-6.79-.83-14.2 0-48.06 33.63-81.7t81.66-33.64q48.04 0 81.71 33.63 33.67 33.63 33.67 81.67t-33.64 81.7Q791.39-518 743.33-518q-23.24 0-42.95-8.17-19.71-8.16-35.05-22.16l-73.66 42.66q1.66 6.34 2.16 12.5.5 6.17.5 13.17t-.5 13.33q-.5 6.34-2.16 12.67l73 42.33q15.33-14.66 35.5-22.83 20.16-8.17 43.16-8.17 48.06 0 81.7 33.63t33.64 81.67q0 48.04-33.63 81.7Q791.41-212 743.37-212t-81.7-33.64Q628-279.28 628-327.33q0-7.28.83-13.94.84-6.67 2.5-12.73l-72.66-42.33q-9.34 9.33-20.84 16-11.5 6.66-24.5 10.66V-285q35.67 10.67 58.84 41 23.16 30.33 23.16 69.33 0 48.06-33.62 81.7-33.63 33.64-81.67 33.64Zm.67-67.34q20.38 0 34.17-13.78 13.79-13.79 13.79-34.17 0-20.38-13.8-34.55-13.8-14.16-34.2-14.16-20.97 0-35.15 14.16-14.19 14.17-14.19 34.55 0 20.38 14.5 34.17 14.5 13.78 34.88 13.78Zm-264-152.66q20.38 0 34.17-13.79 13.79-13.79 13.79-34.17 0-20.38-13.8-34.54-13.8-14.17-34.2-14.17-20.97 0-35.15 14.17-14.19 14.16-14.19 34.54t14.5 34.17q14.5 13.79 34.88 13.79Zm527.34 0q20.38 0 34.16-13.79Q792-306.91 792-327.29q0-20.38-13.8-34.54Q764.4-376 744-376q-20.97 0-35.15 14.17-14.18 14.16-14.18 34.54t14.5 34.17q14.5 13.79 34.88 13.79ZM480.71-432q20.38 0 34.17-13.79 13.79-13.78 13.79-34.16 0-20.38-13.8-34.55-13.8-14.17-34.2-14.17-20.97 0-35.15 14.17-14.19 14.17-14.19 34.55 0 20.38 14.5 34.16Q460.33-432 480.71-432ZM215.38-585.33q20.38 0 34.17-13.79 13.78-13.79 13.78-34.17 0-20.38-13.8-34.54-13.8-14.17-34.2-14.17-20.96 0-35.15 14.17Q166-653.67 166-633.29t14.5 34.17q14.5 13.79 34.88 13.79Zm528.67 0q20.38 0 34.16-13.79Q792-612.91 792-633.29q0-20.38-13.8-34.54Q764.4-682 744-682q-20.97 0-35.15 14.17-14.18 14.16-14.18 34.54t14.5 34.17q14.5 13.79 34.88 13.79Zm-263.34-152q20.38 0 34.17-13.79 13.79-13.79 13.79-34.17 0-20.38-13.8-34.54-13.8-14.17-34.2-14.17-20.97 0-35.15 14.17-14.19 14.16-14.19 34.54t14.5 34.17q14.5 13.79 34.88 13.79Z"/></svg></span>
+                <h2>Modelo de <span>Jakobson</span></h2>
+            </div>
+
+            <div class="grid-funciones">
+                <div class="funcion-card" data-nombre="Emotiva">
+                    <span class="f-numero">1</span>
+                    <p><strong>Emisor:</strong> Expresa sentimientos y actitud.</p>
+                </div>
+                <div class="funcion-card" data-nombre="Referencial">
+                    <span class="f-numero">2</span>
+                    <p><strong>Contexto:</strong> Información objetiva de la realidad.</p>
+                </div>
+                <div class="funcion-card" data-nombre="Apelativa">
+                    <span class="f-numero">3</span>
+                    <p><strong>Receptor:</strong> Busca una reacción u orden.</p>
+                </div>
+                <div class="funcion-card" data-nombre="Fática">
+                    <span class="f-numero">4</span>
+                    <p><strong>Canal:</strong> Inicia o mantiene el contacto.</p>
+                </div>
+                <div class="funcion-card" data-nombre="Poética">
+                    <span class="f-numero">5</span>
+                    <p><strong>Mensaje:</strong> El estilo y la forma estética.</p>
+                </div>
+                <div class="funcion-card" data-nombre="Metalingüística">
+                    <span class="f-numero">6</span>
+                    <p><strong>Código:</strong> Hablar sobre el mismo lenguaje.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+  <section class="mas-visto">
+    <h2>Lo más visto</h2>
+
+    <div class="carrusel-wrapper">
+      <!-- Botón anterior -->
+      <button class="carrusel-btn prev" id="carrusel-prev" aria-label="Anterior">&#8249;</button>
+
+      <!-- Pista de slides -->
+      <div class="carrusel-track-container">
+        <div class="carrusel-track" id="carrusel-track">
+
+          <!-- Slide 1 -->
+          <div class="carrusel-slide">
+            <div class="slide-placeholder">
+            
+              <span class="slide-label">Plan Medio</span>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carrusel-slide">
+            <div class="slide-placeholder">
+              <!-- Agrega aquí tu <img src="..." alt="..."> cuando tengas la imagen -->
+              <span class="slide-label">Nuestros Servicios</span>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carrusel-slide">
+            <div class="slide-placeholder">
+              <!-- Agrega aquí tu <img src="..." alt="..."> cuando tengas la imagen -->
+              <span class="slide-label">Sobre Nosotros</span>
+            </div>
+          </div>
+
+          <div class="carrusel-slide">
+            <div class="slide-placeholder">
+              <!-- Agrega aquí tu <img src="..." alt="..."> cuando tengas la imagen -->
+              <span class="slide-label">Otro</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Botón siguiente -->
+      <button class="carrusel-btn next" id="carrusel-next" aria-label="Siguiente">&#8250;</button>
+    </div>
+
+    <!-- Indicadores / puntos -->
+    <div class="carrusel-dots" id="carrusel-dots">
+      <button class="dot active" data-index="0" aria-label="Slide 1"></button>
+      <button class="dot" data-index="1" aria-label="Slide 2"></button>
+      <button class="dot" data-index="2" aria-label="Slide 3"></button>
+    </div>
+  </section>
+
+  <!-- Botón flotante WhatsApp con desplegable de redes -->
+  <div class="social-float" id="social-float">
+
+    <!-- Redes sociales (desplegables arriba) -->
+    <div class="social-dropdown" id="social-dropdown">
+
+      <a href="https://instagram.com/EunoiaOutsourcing" target="_blank" class="social-btn instagram" title="Instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="22" height="22">
+          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+        </svg>
+      </a>
+
+      <a href="https://facebook.com/EunoiaOutsourcing" target="_blank" class="social-btn facebook" title="Facebook">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="22" height="22">
+          <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+        </svg>
+      </a>
+
+      <a href="https://linkedin.com/company/eunoia-outsourcing" target="_blank" class="social-btn linkedin" title="LinkedIn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="22" height="22">
+          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+        </svg>
+      </a>
+
+      <a href="https://twitter.com/EunoiaOutsrcng" target="_blank" class="social-btn twitter" title="X / Twitter">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="22" height="22">
+          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+        </svg>
+      </a>
+
+    </div>
+
+    <!-- Fila inferior: botón WhatsApp + chevron toggle -->
+    <div class="whatsapp-row">
+      <!-- Enlace directo a WhatsApp -->
+      <a href="https://wa.me/57XXXXXXXXXX?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Eunoia" target="_blank" class="whatsapp-main-btn" id="whatsapp-link" title="Abrir WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="30" height="30">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+      </a>
+
+      <!-- Chevron para abrir/cerrar el desplegable -->
+      <button class="chevron-toggle" id="whatsapp-toggle" title="Ver redes sociales" onclick="toggleSocial()">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="16" height="16" id="chevron-icon">
+          <path d="M7 14l5-5 5 5z"/>
+        </svg>
+      </button>
+    </div>
+
+  </div>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="../JS/script.js"></script>
+  <script src="../JS/index.js"></script>
+
+  <footer class="footer-eunoia">
+    <div class="footer-inner">
+      <p class="footer-brand">Eunoia Outsourcing</p>
+      <p class="footer-copy">&copy; 2026 Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>

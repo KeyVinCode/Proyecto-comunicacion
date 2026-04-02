@@ -1,0 +1,142 @@
+:root{
+    background-color: #ffffff;
+}
+.navbar {
+    display: flex-start;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    
+}
+
+.opcionesnav {
+    display: flex;
+    position: relative;
+    z-index: 2; /* El texto debe estar por encima del indicador */
+}
+
+.opcionesnav a {
+   margin: 0 15px;
+   text-decoration: none;
+   color: #333;
+   font-weight: 500px;
+}
+
+.navbar a:hover, .navbar a.activo {
+    color: #6485ed; /* Blanco puro cuando está sobre el rectángulo naranja */
+    /* text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); Sombreado sutil para darle profundidad y evitar que se pierda */
+    /* background-color: #4b0062; */
+    border-radius: 13%;
+    z-index: 3;
+}
+
+/* El rectángulo naranja que se desliza */
+.indicador {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    height: calc(100% - 20px);
+    background-color: var(--naranja); /* Tu color naranja */
+    border-radius: 30px;
+    transition: all 0.8s cubic-bezier(0.25,1,0.5,1);
+    z-index: 1;
+    pointer-events: none;
+    /* La transición ahora la maneja el JS para evitar el salto desde el inicio */
+}
+
+.container-logo{
+ display: flex;
+ height: 50%;
+ width: 40%;
+}
+   
+.logo{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 150px !important;
+    align-self: flex-start;
+
+}
+
+.container{
+display:flex;
+height:90vh;
+}
+
+
+
+.ladoizquierdo{
+width:50%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+padding-left:80px;
+}
+
+.ladoizquierdo h1{
+font-size:40px;
+text-transform:uppercase;
+margin-bottom:20px;
+}
+
+.ladoizquierdo p{
+color:gray;
+letter-spacing:2px;
+}
+
+
+
+.ladoderecho{
+    width:50%;
+    background:linear-gradient(140deg,#4b0062,#4b0062);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.login-card{
+    background:#d9d9d9;
+    width:320px;
+    padding:30px;
+    border-radius: 8%;
+    text-align:center;
+    position:relative;
+}
+
+.login-card h2{
+    margin-bottom:20px;
+    border-radius: 13px;
+}
+
+
+
+.formulario{
+display:flex;
+flex-direction:row;
+text-align:left;
+margin-bottom:15px;
+}
+
+.formulario input{
+padding:8px;
+max-width: 300px;
+max-height: 30px;
+border-radius:13px;
+border:none;
+}
+
+.formulario-registro{
+display:flex;
+flex-direction:column;
+margin-bottom:15px;
+}
+
+
+
+footer{
+text-align:center;
+padding:20px;
+font-size:12px;
+}
+
+

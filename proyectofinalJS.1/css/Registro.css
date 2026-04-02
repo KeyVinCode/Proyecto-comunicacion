@@ -1,0 +1,322 @@
+:root{
+    --indigo: #1B003F;
+    --Azul_Indigo: #3F1CCF;
+    --blanco_azul: #e6e6fa;
+    --Morado: #891CFF;
+}
+
+body{
+ background-color: var(--blanco_azul) ;
+}
+
+.container-logo{
+ display: flex;
+ height: 15%;
+ width: 10%;
+}
+   
+
+.logo{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 100px !important;
+    align-self: flex;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 60px;
+    position: relative;
+    flex-direction: row;
+    
+}
+
+.opcionesnav{
+    display: flex;
+    position: relative;
+    align-items: center;
+   
+}
+
+.opcionesnav a {
+   margin: 0 15px;
+   text-decoration: none;
+   color: var(--indigo);
+   font-weight: 500px;
+   position: relative;  
+   z-index: 2;
+   transition: color 0.3s ease;
+   padding: 1.5% 2.5%;
+   font-size: 135%;
+   display: inline-block;
+}
+
+.opcionesnav a:hover{
+    color: var(--blanco_azul);
+    transition-delay: 0.1s;
+}
+.opcionesnav a.activo{
+    color: var(--blanco_azul);
+}
+
+.opcionesnav:hover a.activo{
+    color: var(--indigo);
+}
+
+.navbar a:hover, .navbar a.activo {
+    color: var(--blanco_azul); 
+    border-radius: 13%;
+}
+
+/* El rectángulo naranja que se desliza */
+.indicador {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    opacity: 0;
+    background-color: var(--Morado); /* Tu color naranja */
+    border-radius: 30px;
+    z-index: 1;
+    transition: all 0.4s cubic-bezier(0.25,1,0.5,1);
+    /* La transición ahora la maneja el JS para evitar el salto desde el inicio */
+}
+
+
+
+/* Banner morado */
+.purple-banner {
+  background: #8022ff;
+  position: relative;
+  width: calc(100% + 18.5%); /* Más ancho que el contenedor */
+  left: -15.5%; /* Centra el excedente */
+  padding: 20px;
+  color: white;
+  z-index: 1;
+}
+
+/* Efecto de profundidad (Sombra/Doblez) */
+.purple-banner::before,
+.purple-banner::after {
+  content: "";
+  position: absolute;
+  top: 100%; /* Se coloca justo debajo del banner */
+  border-style: solid;
+  z-index: -1; /* Se oculta detrás para que parezca que dobla hacia atrás */
+}
+
+/* Triángulo izquierdo */
+.purple-banner::before {
+  left: 0;
+  border-width: 0 20px 20px 0;
+  border-color: transparent #4a148c transparent transparent; /* Morado más oscuro */
+}
+
+/* Triángulo derecho */
+.purple-banner::after {
+  right: 0;
+  border-width: 20px 20px 0 0;
+  border-color: #4a148c transparent transparent transparent;
+}
+
+.container{
+    display:flex;
+    min-height: calc(100vh - 120px);
+    gap: 11%;
+    padding-bottom: 40px;
+}
+
+.ladoizquierdo{
+    width:50%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding-left:80px;
+}
+
+
+.ladoderecho{
+    width:50%;
+    background:linear-gradient(140deg,#c29eea,#c29eea);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.login-card{
+    background:#e6e6fa;
+    width: 320px;
+    padding:30px;
+    border: solid 1px;
+    border-color: var(--indigo);
+    border-radius: 8%;
+    text-align:center;
+    position:relative;
+}
+
+.login-card h2{
+    margin-bottom:20px;
+    border-radius: 13px;
+}
+
+.ImagenR{
+    height: 100%;
+    width: auto;
+}
+
+.ImaR{
+    height: 150px;
+    width: auto;
+}
+
+.flogin{
+    background-color: none;
+}
+
+.formulario{
+    display:flex;
+    flex-direction:row;
+    text-align:left;
+    margin-bottom:15px;
+    justify-content: space-around;
+}
+
+.formularioC input{
+    padding:8px;
+    border-radius:13px;
+    border:none;
+    width: 90%;
+    margin-bottom:15px;
+}
+
+
+.formularioN{
+    display:flex;
+    flex-direction:row;
+    text-align:left;
+    gap: 38%;
+    padding-left: 5%;
+}
+
+.formularioN2{
+    display:flex;
+    flex-direction:row;
+    text-align:left;
+    gap: 46%;
+    padding-left: 5%;   
+
+}
+.formularioN3{
+    display:flex;
+    flex-direction:row;
+    text-align:left;
+    gap: 38%;
+    padding-left: 5%;
+}
+
+.formularioN4{
+    display:flex;
+    flex-direction:row;
+    text-align:left;
+    gap: 32%;
+    padding-left: 5%;
+}
+
+.formulario input{
+    padding:8px;
+    border-radius:13px;
+    border:none;
+    width: 40%;
+}
+
+.formulario select{
+    padding:8px;
+    border-radius:13px;
+    border:none;
+    width: 40%;
+    background-color: var(--blanco_azul);
+    color: #333;
+}
+
+
+.formulario-registro{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:15px;
+}
+
+.boton{
+    border-radius: 13px;
+    background-color: var(--Azul_Indigo) ;
+    color: white;
+    padding: 2.5%;
+    border: none;
+}
+.botonE{
+    border-radius: 13px;
+    background-color: var(--Azul_Indigo) ;
+    color: white;
+    padding: 2.5% 10%;
+    cursor: pointer;
+    border: none ;
+} 
+
+.formulariob{
+    display: flex;
+    gap: 15%;
+    align-items: center;
+}
+
+.item-opc{
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Separa el texto del radio */
+  gap: 10px;
+  color: white;
+  font-size: 14px;
+}
+
+.opciones{
+    display: flex;
+    flex-direction: column;   
+}
+
+
+input{
+    background-color: var(--blanco_azul);
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    font-size:12px;
+}
+
+
+/* Textos izquierda */
+
+.ladoizquierdo h1{
+    text-align: center;
+    color: var(--indigo);
+    font-size:40px;
+    text-transform:uppercase;
+    margin-bottom:20px;
+}
+
+.ladoizquierdo p{
+    color: var(--indigo);
+    text-align: center;
+    font-size: 130%;
+    letter-spacing:2px;
+}
+
+.sub1{
+    color: var(--Morado);
+}
+
